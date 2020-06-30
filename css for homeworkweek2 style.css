@@ -2,9 +2,17 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 0;
-  background-color: #fff;
-  background-image:url ();
+  background-color: rgb(230, 94, 240);
+  background-image: url("geo\ css\ background\ image.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+
+
+
+
 }
+
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: 6rem;
@@ -12,12 +20,14 @@
   }
 }
 
+
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
 
 .jumbotron h1 {
   font-weight: 300;
+  color: purple;
 }
 
 .jumbotron .container {
@@ -49,7 +59,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-image: url () ;
-  color: white;
+  color: rgb(1, 24, 24);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -66,4 +76,72 @@ input[type=submit]:hover {
   border-radius: 50px;
   background-color: teal;
   padding: 50px;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #b9a9bd;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #bb0794;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: hsl(298, 61%, 25%);;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
